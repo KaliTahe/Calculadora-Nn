@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-UY">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neni-Calculadora</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--JS, si async no funciona cambiar por defer o hasta el final de body-->
+    <script async src="main.js"></script>
+</head>
+<!--La palabra "Neni" se utiliza comúnmente en México para describir a aquellos que compran productos para revenderlos en Facebook 
+Marketplace. Estas personas suelen coordinar encuentros con los clientes a través de Messenger en lugares públicos para realizar 
+las ventas. Los productos que ofrecen pueden variar desde novedades hasta ropa y electrónicos.
+Este proyecto, tiene como objetivo ayudar a estas personas a tomar decisiones más informadas sobre qué productos vale la pena vender a 
+través de este medio. Teniendo en cuenta factores como el costo de envío del proveedor, el transporte y la publicidad, la calculadora 
+determina si la ganancia potencial justifica el esfuerzo.-->
+
+<body class="contenedor">
+    <main class="container-fluid">
+        <header class="container-fluid">
+            <h1 class="titulo">Neni-Calculadora</h1>
+        </header>
+        <form class="container">
+            <p>El objetivo de esta calculadora es ayudarte a definir si realmente vale la pena vender un producto por Facebook Marketplace o no, ayudándote a calcular los costos y ganancias de tus productos para que puedas tomar la mejor decisión.</p>
+            <label for="txtValorUno" class="form-label fs-4">¿Cuál es el nombre del producto que planeas vender?</label>
+            <input type="text" id="txtValorUno" min="1" placeholder="Nombre del producto" class="inputvalue" required />
+            <label for="txtValorDos" class="form-label fs-4">¿Cuánto te cuesta cada unidad?</label>
+            <input type="number" id="txtValorDos" min="1" placeholder="Unidades" class="inputvalue" required />
+            <label for="txtValorTres" class="form-label fs-4">¿Cuántas piezas planeas comprar?</label>
+            <input type="number" id="txtValorTres" min="1" placeholder="Piezas" class="inputvalue" required />
+            <label for="txtValorCuatro" class="form-label fs-4">¿Cuánto te costará el envio? (Envio que te cobra tu proovedor)</label>
+            <input type="number" id="txtValorCuatro" min="1" placeholder="Costo de envio" class="inputvalue" required />
+            <label for="txtValorCinco" class="form-label fs-4">¿Cuál es el precio mínimo de venta en Marketplace? (el precio más bajo de ese producto en Marketplace)</label>
+            <input type="number" id="txtValorCinco" min="1" placeholder="Precio más bajo" class="inputvalue" required />
+            <label for="txtValorSeis" class="form-label fs-4">¿Cuánto te cuesta en promedio realizar cada venta (transporte)? Ej. Gasolina, transporte público o de plataforma</label>
+            <input type="number" id="txtValorSeis" min="1" placeholder="Costo de transporte" class="inputvalue" required />
+            <label for="txtValorSiete" class="form-label fs-4">¿Cuánto gastarás en publicidad?</label>
+            <input type="number" id="txtValorSiete" min="1" placeholder="Publicidad" class="inputvalue" required />
+            <section>
+                <article>
+                    <input type="button" value="Limpiar" id="btn1" class="boton" />
+                    <input type="button" value="Calcular" id="btn" class="boton" />
+                </article>
+            </section>
+            <div id="divMostrarResultado" class="mensaje"></div>
+        </form>
+    </main>
+    <footer class="container-fluid">
+    </footer>
+    
+</body>
+
+</html>
