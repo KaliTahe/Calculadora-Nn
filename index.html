@@ -7,16 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neni-Calculadora</title>
     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!--JS, si async no funciona cambiar por defer o hasta el final de body-->
-    <script async src="main.js"></script>
+    <script async src="/js/calculation.js"></script>
+    <script async src="/js/producto.js"></script>
+    <script async src="/js/main.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<!--La palabra "Neni" se utiliza comúnmente en México para describir a aquellos que compran productos para revenderlos en Facebook 
-Marketplace. Estas personas suelen coordinar encuentros con los clientes a través de Messenger en lugares públicos para realizar 
-las ventas. Los productos que ofrecen pueden variar desde novedades hasta ropa y electrónicos.
-Este proyecto, tiene como objetivo ayudar a estas personas a tomar decisiones más informadas sobre qué productos vale la pena vender a 
-través de este medio. Teniendo en cuenta factores como el costo de envío del proveedor, el transporte y la publicidad, la calculadora 
-determina si la ganancia potencial justifica el esfuerzo.-->
 
 <body class="contenedor">
     <main class="container-fluid">
@@ -43,6 +41,10 @@ determina si la ganancia potencial justifica el esfuerzo.-->
                 <article>
                     <input type="button" value="Limpiar" id="btn1" class="boton" />
                     <input type="button" value="Calcular" id="btn" class="boton" />
+                    <input type="button" value="Guardar" id="btn2" class="boton" />
+                    <input type="button" value="Ver registros" id="btn3" class="boton" />
+                    <input type="button" value="Ocultar registros" id="btn4" class="boton" />
+                    <input type="button" value="Descargar PDF" id="btn5" class="boton" />
                 </article>
             </section>
             <div id="divMostrarResultado" class="mensaje"></div>
@@ -54,3 +56,4 @@ determina si la ganancia potencial justifica el esfuerzo.-->
 </body>
 
 </html>
+

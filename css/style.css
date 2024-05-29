@@ -1,0 +1,121 @@
+body {
+  background-image: url('/images/fondo.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.container-fluid{
+  background-color: #f2e6f0;
+}
+form p {
+  font-style: italic;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: monospace;
+}
+
+form {
+  width: 70%;
+  max-width: 500px;
+  text-align: center;
+  margin-left: 80px;
+}
+
+.titulo {
+  text-align: center;
+  color: #d7a9a4;
+  padding-top: 20px;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 45%;
+}
+
+form input[type="button"] {
+  display: inline-block;
+  width: 45%; 
+  background-color: #f4c9da;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+form input[type="button"] + input[type="button"] {
+  margin-left: 10px;
+}
+
+#divMostrarResultado {
+  background-color: #f4c9da;
+  color: whitesmoke;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow-x: auto; 
+  max-width: 100%; 
+}
+
+#divMostrarResultado table {
+  width: auto; 
+  border-collapse: collapse;
+  color: black; 
+}
+
+
+#divMostrarResultado th,
+#divMostrarResultado td {
+  border: 1px solid #d7a9a4;
+  padding: 8px;
+  text-align: center;
+}
+
+#divMostrarResultado th {
+  background-color: #f2e6f0;
+}
+
+#divMostrarResultado tr:nth-child(even) {
+  background-color: #f2e6f0;
+}
+
+@media screen and (max-width: 600px) {
+  #divMostrarResultado table {
+      width: 100%;
+  }
+
+  #divMostrarResultado thead,
+  #divMostrarResultado tbody,
+  #divMostrarResultado th,
+  #divMostrarResultado td,
+  #divMostrarResultado tr {
+      display: block;
+  }
+
+  #divMostrarResultado tbody tr {
+      margin-bottom: 10px;
+  }
+
+  #divMostrarResultado td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+  }
+
+  #divMostrarResultado td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+  }
+}
