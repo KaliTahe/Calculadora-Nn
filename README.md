@@ -2,7 +2,7 @@
 Calculadora proyecto coderhouse JS
 
 
-<!--La palabra "Neni" se utiliza comúnmente en México para describir a aquellos que compran productos para revenderlos en Facebook 
+La palabra "Neni" se utiliza comúnmente en México para describir a aquellos que compran productos para revenderlos en Facebook 
 Marketplace. Estas personas suelen coordinar encuentros con los clientes a través de Messenger en lugares públicos para realizar 
 las ventas. Los productos que ofrecen pueden variar desde novedades hasta ropa y electrónicos.
 Este proyecto, tiene como objetivo ayudar a estas personas a tomar decisiones más informadas sobre qué productos vale la pena vender a 
@@ -16,4 +16,3 @@ Guardar: Guarda la consulta por prod|ucto
 Ver registros: Muestra a manera de tabla los registros o consultas guardadas
 Ocultar registros: Oculta la tabla con los registros
 Descargar: Descarga un pdf con las consultas realizadas
--->
